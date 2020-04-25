@@ -1,5 +1,9 @@
 .menu-top {
    display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100% !important;
+   
 
       &__logo {
          display: flex;
@@ -8,5 +12,6 @@
          svg {
             width: 40px;
          }
-      }
+   }
 }
+

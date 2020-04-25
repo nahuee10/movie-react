@@ -3,6 +3,7 @@ import { Row, Col } from 'antd';
 import useFetch from '../hooks/useFetch';
 import { URL_API, API } from '../utils/contants';
 import MovieList from '../components/MovieList';
+import Footer from '../components/Footer';
 
 import SliderMovies from '../components/SliderMovies';
 
@@ -13,6 +14,8 @@ export default function Home() {
 
    const popularMovies = useFetch(`${URL_API}/movie/popular?api_key=${API}&language=es-ES&page=1`
    );
+
+   const masVotadas = useFetch(`${URL_API}/movie/top_rated?api_key=${API}&language=es-ES&page=1`)
 
    console.log(newMovies);
    
@@ -25,9 +28,10 @@ export default function Home() {
                <MovieList title="Peliculas Populares" movies={popularMovies}/>
             </Col>
             <Col xs={24} sm= {24} md={12}>
-               <MovieList title="Peliculas Populares" movies={popularMovies}/>
+               <MovieList title="Peliculas mas votadas" movies={masVotadas}/>
             </Col>
          </Row>
+         <Footer />
       </>
    );
 

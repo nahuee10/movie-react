@@ -1,0 +1,16 @@
+.movie-catalog {
+   display: inline-block !important;
+   justify-content: center !important;
+   margin-top: 25px;
+   margin-left: 26px;
+
+   .ant-card-cover {
+      img {
+         height: 350px !important;
+      }
+   }
+
+   .ant-card-mete-title {
+      text-align: center !important;
+   }
+}

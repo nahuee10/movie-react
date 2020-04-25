@@ -3,12 +3,12 @@ import ReactDOM, { unmountComponentAtNode } from 'react-dom';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import "antd/dist/antd.css";
+import "rc-pagination/assets/index.css"
 import './index.css';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+
+    <App />,
   document.getElementById('root')
 );
 
