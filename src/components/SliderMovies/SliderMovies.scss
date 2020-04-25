@@ -1,0 +1,38 @@
+.slider-movies {
+   height: 500px;
+
+      &__movie {
+         height: 500px;
+         background-size: cover;
+         background-repeat: no-repeat;
+         background-position: center top;
+
+         &-info {
+            display: flex;
+            align-items: center;
+            height: 100%;
+
+            > div {
+               background-color: #a7a7a7cf;
+               margin: 0 auto;
+               text-align: center;
+               width: 100%;
+               padding: 20px;
+               
+            } 
+         }
+      }
+}
+
+$breakpoint-tablet: 600px;
+@media (min-width: $breakpoint-tablet) {
+   .slider-movies {
+      &__movie{
+         &-info {
+            > div {
+               width: 50%;
+            }
+         }
+      }
+   }
+}
